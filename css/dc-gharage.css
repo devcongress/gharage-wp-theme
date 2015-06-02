@@ -1,0 +1,324 @@
+/*
+Theme Name: DevCongress Gharage
+Theme URI: http://devcongress.org/
+Author: DevCongress
+Author URI: http://devcongress.org
+Description: DevCongress Gharage Custom Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dc-gharage
+Tags:
+
+DevCongress Gharage is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Widgets
+# Content
+    ## Posts and pages
+	## Asides
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+	color: #58585b;
+	font-family: 'FiraSans-Light', 'Arial', 'Helvetica', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #ec008b;
+	font-family: 'Actor','Arial', 'Helvetica' sans-serif;
+}
+
+p {
+	-webkit-hyphens: auto;
+	display: block;
+	font-size: 15px;
+	line-height: 22px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 15px;
+}
+
+/*--------------------------------------------------------------
+# Elements & Colors
+--------------------------------------------------------------*/
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.dc-blue {
+	color: #00adef;
+}
+
+.dc-gh-blue {
+
+}
+
+.dc-gray {
+	color: #58585b;
+}
+
+.dc-pink {
+	color: #ec008b;
+}
+
+.dc-yellow {
+	color: #fff100;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
+
+.site-content{
+    margin-bottom: 200px;
+    width: 60%;
+}
+
+@media(max-width: 767px){
+	.site-content{
+    	width: 90%;
+	}
+}
+
+.footer-info {
+	width: 100%;
+}
+
+.site-info {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+.site-header {
+	margin-bottom: 70px;
+}
+
+@media(min-width: 600px) and (max-width: 960px){
+	.site-header {
+		width: 90%;
+	}
+}
+
+.site-branding {
+	float: left;
+	margin-top: 15px;
+	display: inline;
+}
+
+.header-logo {
+	width: 200px;
+	height: auto;
+}
+
+.main-navigation {
+	float: right;
+	width: initial;
+	margin-top: -55px;
+}
+
+@media (max-width: 599px){
+	.site-branding {
+		margin-left: calc(50% - 125px);
+	}
+
+	.header-logo {
+		width: 250px;
+	}
+
+	/*Added these next two declarations because the menu bar is not needed now - it has only three links. */
+	.menu-toggle, .main-navigation.toggled ul {
+		display: none;
+	}
+
+	.main-navigation {
+		margin-top: 0;
+		float: none;
+		margin-left: calc(50% - 140px);
+	}
+
+	.main-navigation ul {
+		display: block;
+		list-style: none;
+		padding-left: 0;
+	}
+
+}
+
+ul, ol {
+	margin: 0 0 1.5em -1em;
+}
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+a {
+	color: #00adef;
+	text-decoration: none;
+	-webkit-transition: all .95s ease;
+	   -moz-transition: all .95s ease;
+	    -ms-transition: all .95s ease;
+	     -o-transition: all .95s ease;
+	        transition: all .95s ease;
+}
+
+a:visited {
+	color: purple;
+}
+
+a:hover {
+	color: purple;
+	text-decoration: underline;
+	-webkit-transition: all .55s ease;
+	   -moz-transition: all .55s ease;
+	    -ms-transition: all .55s ease;
+	     -o-transition: all .55s ease;
+	        transition: all .55s ease;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+
+.menu-item {
+	margin: 3px 8px;
+}
+
+.menu-item a {
+	padding: 10px 20px;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget-area{
+	width: 28%;
+}
+
+.widget-title {
+	margin-bottom: 5px;
+}
+
+.textwidget {
+	margin-top: -12px;
+}
+
+@media (max-width: 700px){
+	.widget-area {
+		width: 88%;
+		float: none;
+		margin-top: 25px;
+	}
+}
+
+@media (min-width: 701px){
+	.widget-area {
+		width: 80%;
+		float: none;
+		margin-top: 25px;
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+
+.content-area {
+	width: 66%;
+	margin-top: -35px;
+}
+
+@media (max-width: 700px){
+	.content-area {
+		width: 88%;
+		float: none;
+		margin-top: -35px;
+	}
+}
+
+@media (min-width: 701px){
+	.content-area {
+		width: 80%;
+		float: none;
+		margin-top: -35px;
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+
+.entry-title {
+	margin-bottom: 5px;
+}
+
+.entry-meta {
+	text-transform: uppercase;
+}
+
+.entry-content {
+	margin: 0.5em 0 0;
+}
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
